@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cabsa test</title>    
+    <title>Cabsa test</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;    
+        }
+
+        .cabsa-footer-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #433e3e;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <main>
         <section class="cabsa-section-1">
             <h2>This is a custom section</h2>
+            <h3>Idioma por defecto es: <span id="default-lang"></span></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt, accusamus, praesentium quidem cum nobis commodi ipsam eos explicabo corrupti in beatae nostrum reprehenderit harum vitae possimus optio, amet velit!</p>
         </section>
         <aside>
@@ -30,5 +52,11 @@
             </div>
         </footer>
     </main>   
+
+    <script>
+        let tagDefLang = document.getElementById('default-lang');
+
+        tagDefLang.innerHTML = document.documentElement.lang;
+    </script>
 </body>
 </html>

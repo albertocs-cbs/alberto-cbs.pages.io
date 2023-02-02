@@ -1,0 +1,19 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.cabsa-footer-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #433e3e;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
